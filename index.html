@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="main-message-container">
+      <h1>SPLIT<br>BILL</h1>
+    </div>
+    <div class="calc-container">
+      <div class="bill-container input-content">
+        <div class="bill-message">
+          <h3>Bill</h3>
+          <h3 class="error-text invisible" id="error-message2">Numbers only</h3>
+        </div>
+
+        <div class="input-container">
+          <img alt="A dollar symbol" src="images/idr.png" aria-hidden="true">
+          <input type="text" id="bill" placeholder="0" maxlength="6">
+        </div>
+      </div>
+
+      <div class="tip-container input-content">
+        <h3>Select tip %</h3>
+        <div class="tip-buttons">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input id="custom-input" placeholder="Custom" maxlength="3">
+        </div>
+      </div>
+
+      <div class="people-container input-content">
+        <div class="people-headers">
+          <h3>Number of People</h3>
+          <h3 class="error-text invisible" id="error-message1">Numbers only</h3>
+        </div>
+        <div class="input-container">
+          <img alt="A cartoon of a person" src="images/user.png" aria-hidden="true">
+          <input type="text" id="people" placeholder="0" maxlength="4">
+        </div>
+      </div>
+
+      <div class="result-container">
+        <div class="amount-container result-content">
+          <div class="message-container">
+            <p class="result-message">Tip Amount</p>
+            <p class="per-person-message">/ person</p>
+          </div>
+
+          <p class="result-display" id="tip-amount">Rp0,00</p>
+        </div>
+
+        <div class="total-container result-content">
+          <div class="message-container">
+            <p class="result-message">Total</p>
+            <p class="per-person-message">/ person</p>
+          </div>
+
+          <p class="result-display" id="total-amount">Rp0,00</p>
+        </div>
+
+        <div class="button-container">
+          <button id="reset-button" alt="Reset button">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/muliasw12">Mulia</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </main>
+
+ 
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+</body>
+</html>
